@@ -1,0 +1,446 @@
+/*body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}*/
+#body-header{
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(pics/4.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+/*Horizontal-list*/
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    /*text-align: center;*/
+    margin: 0px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+    /*font-size: 25px;*/
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+}
+.nav-menu li a:hover{
+    color: navy;
+    border-bottom: 4px solid black;
+}
+.text-center{
+    text-align: center;
+}
+/*Social content*/
+#name-social-container{
+    margin-top: 20vh;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: #0535e3;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    font-family: sans-serif;
+}
+.social-icons li a i{
+    color: #f20a2d;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px navy;
+}
+    /*          h-offset   v-offset blur spreadcolor color*/
+    /*if h-off set is positive value then it effects to right*/
+    /*if h-off set is negative value then it effects to left*/
+    /*if v-off set is positive value then it effects to bottom*/
+    /*if v-off set is positive value then it effects to top*/
+
+    /*image setting*/
+    #about{
+        height: auto;
+        width: 100%;
+        position: relative;
+        margin-bottom: 30px;
+    }
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin:auto;
+    margin-top: -17vh
+
+}
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%
+}
+#my-image img{
+ border: 3px solid dimgrey;
+    box-shadow: 1px 1px 10px 2px dimgrey;
+}
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+#paragraph-text{
+    text-align: justify;
+    font-size: 2rem;
+
+}
+section{
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+section:nth-child(2n){
+background-color: #9e9b9b29;;
+}
+section:nth-child(2n+1){
+background-color: white;
+}
+/*#skills{
+    border:2px solid black;*/
+}
+/*Skill Section*/
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 200;
+}
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+    font-family: sans-serif;
+    font-weight: 200;
+    margin-top: 25px;
+}
+.skills-display{
+     width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skill-progress{
+    width: 11rem;
+    height:2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    /*border:2px solid black;*/
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+}
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+.skill-name span{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.seventy-percent{
+    width: 70%;
+    height:inherit;
+    background-color: red;
+}
+.eighty-percent{
+    width: 80%;
+    height:inherit;
+    background-color: green;
+}
+.ninety-percent{
+    width: 90%;
+    height:inherit;
+    background-color: purple;
+}
+.seventyfive-percent{
+    width: 75%;
+    height:inherit;
+    background-color: blue;
+}
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+}
+
+
+/*contact section*/
+#contact{
+   background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #757579;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+    color: white;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*Work Experience*/
+.timeline{
+    position: relative;
+    width: 75%;
+ /*   border:2px solid black;*/
+}
+.timeline-box{
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+   /* border:2px solid black;*/
+}
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-divider{
+    position: absolute;
+    height: 77%;
+    width:0;
+    border:1px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+@media screen and (max-width: 600px){
+    .timeline-divider{
+        left: 5%;
+    }
+    .timeline-box{
+         left: 12% !important;
+         width:80%;
+    }
+    .timeline-box::after{
+         left: -12% !important;
+    }
+    html{
+        font-size: 15px;
+    }
+}
+.timeline-traveller{
+    position: sticky;
+    top: 25%;
+    transform: rotate(90deg);
+}
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 45%;
+    right:-12.95%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: lightgrey;
+    z-index: 2;
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 45%;
+    left:-9.55%;
+    border-radius: 50%;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: lightgrey;
+    z-index: 2;
+}
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+.experience-designation {
+    font-size: 1.4rem;
+    text-align: right;
+    color: #2857a4;
+    font-family: sans-serif;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-top: -15px;
+    text-align: right;
+     font-family: sans-serif;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+    margin-top: -3px; 
+    text-align: right;
+     font-family: sans-serif;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+    text-align: justify;
+    margin: auto;
+     font-family: sans-serif;
+}
+footer{
+     width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#Resume {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#Resume a {
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  padding: 10px 20px; 
+  color: #130b14;
+  border-radius: 5px;
+}
